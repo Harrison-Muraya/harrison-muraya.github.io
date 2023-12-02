@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/tablog.png">
+    <title>Harrison-Muraya portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b31d94c996.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo" >
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Harrison</span><br>Muraya from Kenya </h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Results-driven and highly skilled Computer Science professional seeking job opportunity to
+                         leverage my expertise in programming, networking and software development. Adept at working independently or 
+                         as part of a team, I excel in high-pressure environments and consistently deliver exceptional results. 
+                         My strong technical background, combined with excellent problem-solving, analytical, and communication skills, 
+                         make me a valuable asset to any organization. Expert in the following programming languages; 
+                         Python,php, Java C, C++, and C# programming.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Proficient in Python, Java, PHP, C#, JavaScript, C++ and C programming languages</li>
+                            <li><span>Web application development</span><br>Proficient in web application development (Django, Flask, Html, CSS and JavaScript, laravel)</li>
+                            <li><span>Networking</span><br>Experienced in networking troubleshooting and maintenance.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>10/2022 – 04/2023 Blockchain Web Application</span><br>Created a blockchain web application using Flask. The application allowed users to perform secure transactions,
+                                 maintain a decentralized ledger, and verify data integrity.</li>
+                            <li><span>04/2022 – 08/2022 Attachment, NSSF KENYA</span><br>Assisted in the network troubleshooting, Software installation and troubleshooting software fault</li>
+                            <li><span>09/2021-03/2022 Point of Sale Desktop Application</span><br>Experienced in networking troubleshooting and maintenance.</li>
+                        </ul>
+                    </div><div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>08/2019 – 09/2023 University of Embu </span><br>Bachelor of Science in Computer Science, second class (upper division) </li>
+                            <li><span>02/2015 – 11/2018 Koelel High School </span>Kenya Certificate of Secondary Education (K.C.S.E), B - (Overall grade) •<br></li>
+                            <li><span>01/2006 – 11/2014</span>Bridges views Academy,303•marks (overall marks)<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!--    services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I possess a strong aptitude for web design, combining creativity with a keen eye for detail.
+                         My proficiency in HTML, CSS, and JavaScript enables me to craft visually 
+                         appealing and user-friendly websites that engage and captivate audiences.
+                          I am dedicated to staying abreast of the latest design trends and best practices, 
+                          ensuring that my web designs are always at the forefront of innovation</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>Software Developer</h2>
+                    <p>As a highly skilled Software Developer, I possess expertise in a range of programming languages,
+                         including Python, Java, C, C++, and C#. My strong technical background, coupled with 
+                         exceptional problem-solving and analytical abilities, makes me a valuable asset in software development.
+                          I have a proven track record of excelling in high-pressure environments, both independently and as part of a team. 
+                          My dedication to innovation and continuous learning positions me as a forward-thinking developer ready to embrace
+                           emerging technologies and trends, such as Web3. My project experience,
+                         including blockchain applications and point-of-sale systems, reflects my ability to deliver exceptional results</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-network-wired"></i>
+                    <h2>Networking and Computer Security</h2>
+                    <p>In the realm of Networking and Computer Security, I bring a wealth of knowledge and expertise to the table.
+                         My experience extends beyond software development to encompass networking troubleshooting and maintenance. 
+                         I excel in ensuring the stability and security of computer networks, implementing robust security protocols, 
+                         and safeguarding sensitive data. My ability to identify and mitigate potential threats and vulnerabilities 
+                         makes me a valuable asset in maintaining the integrity of digital systems. Additionally, I'm adept at devising 
+                         and implementing strategies to protect against cyberattacks, ensuring the confidentiality and availability of 
+                         critical information.
+                         My dedication to staying updated with the latest security trends and technologies further enhances my 
+                         capabilities in this critical domain.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Pint of Sale App</h3>
+                    <p>Developed a point-of-sale desktop application using C#. 
+                        The application facilitated sales transactions,
+                         inventory management, and generating reports.</p>
+                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Blockchain Web App</h3>
+                    <p>Created a blockchain web application using Flask. 
+                        The application allowed users to perform secure transactions, 
+                        maintain a decentralized ledger, and verify data integrity.</p>
+                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Desktop Game</h3>
+                    <p>Developed a game using Java. The game featured interactive gameplay, 
+                        graphics, and user-friendly controls.
+                        Technologies: Java, Game Development
+                        </p>
+                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contant-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> harrisonmuraya8@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +254726688832</p>
+                    <div class="sociol-icons">
+                        <a href="https://www.facebook.com/hezroneer.muraya" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Harrison-Muraya"target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="http://www.linkedin.com/in/muraya-harrison" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download My CV</a>
+                </div>
+                <div class="contant-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="coypright">
+            <p>coypright @ Harrison <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link"); 
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+        function closemenu(){
+            sidemenu.style.right = '-200px'
+        }
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzcuk95ivtTI8wKYj5GrGitiE2zk3VT65qGITuSBEIzoDSfxseOJhEY1t6eQPTlD7QY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Succussefully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
